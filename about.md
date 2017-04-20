@@ -6,7 +6,7 @@ permalink: /about/
 
 ### More Information
 
-University of Seoul ECE 17th
+University of Seoul 17th ECE
 
 ### Contact me
 
