@@ -1,6 +1,7 @@
 ---
 layout : post
 title : 함수 - int와 void의 차이
+comments : true
 ---
 
 지난 글에서 **정수 2개 중 작은 정수를 출력**할 때, `void`형 함수 `printSmaller`를 사용하였는데요,
