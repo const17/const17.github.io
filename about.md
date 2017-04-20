@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+University of Seoul ECE 17th
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[const17@uos.ac.kr](mailto:email@domain.com)
