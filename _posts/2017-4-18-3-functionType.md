@@ -44,6 +44,8 @@ int main(){
 물론 다음과 같이 `int`형 함수에서도 값을 직접 출력하는 것이 가능합니다.
 
 ```c
+#include <stdio.h>
+
 int printSmaller(int a, int b){
   if(a<b)
    printf("%d\n",a);
