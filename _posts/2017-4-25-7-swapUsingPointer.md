@@ -1,6 +1,6 @@
 ---
 layout : post
-title : 포인터와 함수를 이용해 두 수의  바꾸기
+title : 포인터와 함수를 이용해 두 수의 값 바꾸기
 comment : true
 ---
 
