@@ -43,7 +43,7 @@ Changed num1:10, num2:20
 
 이유는 강의 시간에 배운 **매개변수의 전달과 존재기간**에서 찾을 수 있는데요, 이는 다음과 같았습니다.
 
-![매개변수의 전달과 존재기간](const17.github.io/images/swapUsingPointer.png)
+![매개변수의 전달과 존재기간](./images/swapUsingPointer.png)
 
 함수 내에서의 흐름은 다음과 같은데요,
 
