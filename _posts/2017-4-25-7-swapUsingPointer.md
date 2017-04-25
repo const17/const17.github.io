@@ -43,11 +43,11 @@ Changed num1:10, num2:20
 
 이유는 강의 시간에 배운 **매개변수의 전달과 존재기간**에서 찾을 수 있는데요, 이는 다음과 같았습니다.
 
-![매개변수의 전달과 존재기간](./images/swapUsingPointer.png)
+![매개변수의 전달과 존재기간](/const17.github.io/images/swapUsingPointer.png)
 
 함수 내에서의 흐름은 다음과 같은데요,
 
-![잘못된 swap](const17.github.io/images/swapUsingPointer2.png)
+![잘못된 swap](/const17.github.io/images/swapUsingPointer2.png)
 
 *이미지 출처 : 열혈 C 프로그래밍, 윤성우 저*
 
@@ -96,7 +96,7 @@ Changed num1:20, num2:10
 
 이렇게 **메모리의 접근에 사용되는 주소 값을 전달**하여 **외부에서 선언된 변수에 접근이 가능**한 형태의 함수호출을 가리켜 **Call-by-reference**라고 합니다.
 
-![CallByReference](const17.github.io/images/swapUsingPointer3.png)
+![CallByReference](/const17.github.io/images/swapUsingPointer3.png)
 
 
 *이미지 출처 : 열혈 C 프로그래밍, 윤성우 저*
