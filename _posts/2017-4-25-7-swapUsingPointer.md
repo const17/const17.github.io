@@ -11,22 +11,22 @@ comment : true
 ```c
 #include <stdio.h>
 
-void swap(int x, int y){
+void swap(int n1, int n2){
   int temp=0;
   
-  temp=x;
-  x=y;
-  y=temp;
+  temp=n1;
+  n1=n2;
+  n2=temp;
 }
 
 int main(){
-  int x=10, y=20;
+  int num1=10, num2=20;
   
-  printf("Original x:%d, y:%d\n",x,y);
+  printf("Original num1:%d, num2:%d\n",num1,num2);
   
-  swap(x,y);
+  swap(num1,num2);
   
-  printf("Changed x:%d, y:%d\n",x,y);
+  printf("Changed num1:%d, num2:%d\n",num1,num2);
   
   return 0;
 }
@@ -34,35 +34,42 @@ int main(){
 
 ```c
 출력 결과
-Original x:10, y:20
-Changed x:10, y:20
+Original num1:10, num2:20
+Changed num1:10, num2:20
 ```
+우선 `swap` 함수에서 사용한 알고리즘이 이해가 되지 않으시는 분은 [이전 글](https://const17.github.io/5-swap/)을 참고하시면 될 것 같습니다.
 
 하지만 출력 결과에서 볼 수 있듯이 두 변수의 값은 변하지 않습니다.
 
 이유는 강의 시간에 배운 **매개변수의 전달과 존재기간**에서 찾을 수 있는데요, 이는 다음과 같았습니다.
 
-![매개변수의 전달과 존재기간](./img/)
+![매개변수의 전달과 존재기간](./images/swapUsingPointer.png)
+
+
+
+
+
+
 
 ```c
 #include <stdio.h>
 
-void swap(int *px, int*py){
+void swap(int *ptr1, int*ptr2){
   int temp=0;
   
-  temp=*px;
-  *px=*py;
-  *py=temp;
+  temp=*ptr1;
+  *ptr1=*ptr2;
+  *ptr2=temp;
 }
 
 int main(){
-  int x=10, y=20;
+  int num1=10, num2=20;
   
-  printf("Original x:%d, y:%d\n",x,y);
+  printf("Original num1:%d, num2:%d\n",num1,num2);
   
-  swap(&x,&y);
+  swap(&num1,&num2);
   
-  printf("Changed x:%d, y:%d\n",x,y);
+  printf("Changed num1:%d, num2:%d\n",num1,num2);
   
   return 0;
 }
@@ -71,9 +78,9 @@ int main(){
 
 ```c
 출력 결과
-Original x:10, y:20
-Changed x:20, y:10
+Original num1:10, num2:20
+Changed num1:20, num2:10
 ```
 
-우선 `swap` 함수에서 사용한 알고리즘이 이해가 되지 않으시는 분은 [이전 글](https://const17.github.io/5-swap/)을 참고하시면 될 것 같습니다.
+
 
